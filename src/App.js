@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, } from 'react';
 import * as mobilenet from "@tensorflow-models/mobilenet";
 
 function App() {
@@ -57,7 +57,7 @@ function App() {
         if (imageURL) {
             setHistory([imageURL, ...history]);
         }
-    }, [imageURL]);
+    }, [history, imageURL]);
 
     if (isModelLoading) {
         return <h2>Model Loading...</h2>;
